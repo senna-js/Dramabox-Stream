@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['search'])) {
 <main class="flex flex-col items-center p-4 space-y-4">
   <section class="w-full md:w-2/3 bg-white p-4 rounded-lg">
     <h2 class="text-2xl font-semibold mb-4">Pencarian</h2>
-    <form action="search.php" method="GET" class="flex items-center space-x-2">
+    <form action="searchDrama.php" method="GET" class="flex items-center space-x-2">
       <input type="text" name="search" value="<?= htmlspecialchars($searchQuery); ?>" class="w-full p-2 border rounded-lg" placeholder="Cari buku atau judul..." required>
       <button type="submit" class="p-2 bg-blue-500 text-white rounded-lg">Cari</button>
     </form>
