@@ -5,5 +5,5 @@ Dramabox Stream adalah sebuah proyek yang bertujuan untuk menyediakan platform s
 - Pencarian drama berdasarkan judul atau genre
 - Pemutaran video dengan kualitas tinggi
 
-## Dibuat Oleh
-Proyek ini dibuat oleh rznive.
+##
+dibuat oleh rznive.
