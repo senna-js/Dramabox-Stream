@@ -1,0 +1,11 @@
+.episode-button.active {
+    background-color: #4CAF50;
+    /* Green for active episode */
+    color: white;
+    font-weight: bold;
+  }
+
+  .episode-button:hover {
+    background-color: #ddd;
+    /* Light gray on hover */
+  }

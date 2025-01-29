@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +15,14 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="bg-gray-100">
   <header class="bg-gray-800 text-white p-4">
     <div class="flex justify-between items-center">
       <div>
-        <a href="/"><h1 class="text-2xl">RZBOX</h1></a>
+        <a href="/">
+          <h1 class="text-2xl">RZBOX</h1>
+        </a>
       </div>
       <div>
         <form action="searchDrama.php" method="GET" class="flex items-center">
@@ -28,6 +32,7 @@
       </div>
     </div>
   </header>
-  
+
 </body>
+
 </html>
