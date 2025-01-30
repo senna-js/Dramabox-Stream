@@ -24,9 +24,6 @@ if (isset($_GET['bookId']) && isset($_GET['bookNameLower'])) {
 
   $bookInfo = $dataArray['pageProps']['bookInfo'];
   $bookName = $bookInfo['bookName'];
-  $viewCount = $bookInfo['viewCount'];
-  $followCount = $bookInfo['followCount'];
-  $introduction = $bookInfo['introduction'];
   $chapterCount = $bookInfo['chapterCount'];
 } else {
   die('Error: Missing bookId or bookNameLower');
@@ -76,28 +73,7 @@ if (isset($_GET['bookId']) && isset($_GET['bookNameLower'])) {
   </a>
 </main>
 
-<div class="mt-4 bg-white p-4 rounded-lg shadow-md w-full md:w-2/3 mx-auto">
-  <table class="table-auto w-full rounded-lg">
-    <tbody>
-      <tr>
-        <td class="font-semibold p-2">Nama</td>
-        <td class="p-2"><?= htmlspecialchars($bookName); ?></td>
-      </tr>
-      <tr>
-        <td class="font-semibold p-2">Statistik</td>
-        <td class="p-2"><?= htmlspecialchars($viewCount); ?> Watched | <?= htmlspecialchars($followCount); ?> Follower</td>
-      </tr>
-      <tr>
-        <td class="font-semibold p-2">Synopsis:</td>
-        <td class="p-2"><?= nl2br(htmlspecialchars($introduction)); ?></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
 <?php include 'components/footer.php'; ?>
-
-<!-- JavaScript -->
 <script src="assets/js/episode.js"></script>
 
 </body>
